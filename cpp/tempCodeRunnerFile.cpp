@@ -1,0 +1,1 @@
+    printf("%d ", current_node->data);
