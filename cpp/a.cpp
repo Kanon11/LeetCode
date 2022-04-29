@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int maximumGap(const int *A, int n1)
-{
+{//kc
     int aa[n1][2];
     for (int i = 0; i < n1; i++)
     {
