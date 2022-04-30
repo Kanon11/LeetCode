@@ -76,18 +76,36 @@ void print_linkded_list(Node *head)
     }
     printf("\n");
 }
+//Node * mergeTwoLists(Node *list1,Node *list2){
+//    Node *new_head=create_new_Node(-500,NULL);
+//    while(list1!=NULL || list2!=NULL){
+//        if(list1->data<=list2->data){
+//
+//        }
+//    }
+//}
 int main()
 {
-    Node *n, *head, *n2;
-    head = create_new_Node(10, NULL);
-    head = append(30, head);
-    head = prepend(20, head);
-    head = append(40, head);
-    head = prepend(-10, head);
-    print_linkded_list(head);
-    printf("\n%d", count(head));
-    n2 = search(-10, head);
-    printf("%d", n2->data);
+    Node *n, *head, *n2,*list1,*list2;
+    list1=create_new_Node(1,NULL);
+    list1=append(2,list1);
+    list1=append(4,list1);
+//    print_linkded_list(list1);
+
+    list2=create_new_Node(1,NULL);
+    list2=append(3,list2);
+    list2=append(4,list2);
+//    n =mergeTwoLists(list1,list2);
+//    print_linkded_list(list2);
+//    head = create_new_Node(10, NULL);
+//    head = append(30, head);
+//    head = prepend(20, head);
+//    head = append(40, head);
+//    head = prepend(-10, head);
+//    print_linkded_list(head);
+//    printf("\n%d", count(head));
+//    n2 = search(-10, head);
+//    printf("%d", n2->data);
     // printf("Hello world: %d", n2->next->data);
     return 0;
 }
