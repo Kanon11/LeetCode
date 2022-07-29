@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1659029445 source:c:\xampp\htdocs\leetcode\cpp\bs2\main.cpp
+	<string.h>
+	<iostream>
+
