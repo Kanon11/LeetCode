@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "dev":"nodemon group-anagram.js"
+    "dev":"nodemon longest-consecutive-sequence.js"
   },
   "repository": {
     "type": "git",
