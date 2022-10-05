@@ -1,13 +1,6 @@
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
 }
-<<<<<<< HEAD
-function getkeys(map,value) {
-    map.forEach(element => {
-        console.log(element);
-    });
-}
-=======
 const getKeys = (map, val) => {
     let list = [];
     Object.keys(map).forEach(function (key, index) {
@@ -18,7 +11,6 @@ const getKeys = (map, val) => {
     return list;
 }
 
->>>>>>> 67cad6e925d70e747f02d1e35a8bce2d651da0a5
 var topKFrequent = function (nums, k) {
 
     let map = new Map;
