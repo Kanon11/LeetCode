@@ -22,20 +22,18 @@ function readline() {
 // ********** Code Start **********
 
 function main() {
-    // your code goes here
     var input = readline();
-    input = input.split("").map(x => parseInt(x));
-    var count = 0;
-    for (let i = 0; i < input.length; i++) {
-        const element = input[i];
-        if (element == 4 || element == 7) {
-            count++;
-        }
+    var t = parseInt(input);
+    while (t--) {
+        input = readline();
+        var n = parseInt(input);
+        var arrays = readline().split(" ").map(function (x) { return parseInt(x) });
+        var ans = 1;
+        for (let i = 0; i < arrays.length; i++) {
+            ans *= arrays[i];
 
-    }
-    if (count == 4 || count == 7) {
-        print("YES");
-    } else {
-        print("NO");
+        }
+        print((ans + (n - 1)) * 2022);
+
     }
 }
