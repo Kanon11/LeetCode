@@ -9,6 +9,9 @@ while (t--) {
         ans *= arrays[i];
         
     }
-    print((ans+(n-1)) * 2022);
+    print((ans + (n - 1)) * 2022);
+    var x = f
+    
+    Math.fround()
     
 }
