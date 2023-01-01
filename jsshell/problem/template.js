@@ -22,13 +22,23 @@ function readline() {
 // ********** Code Start **********
 
 function main() {
-    var input = readline();
-    var t = parseInt(input);
+    var t = readline();
+    t = parseInt(t);
     while (t--) {
+        var input = readline().split(" ").map(function (x) { return parseInt(x) });
+        var n = input[0];
+        var m = input[1];
+        var a = readline().split(" ").map(function (x) { return parseInt(x) });
+        var b = readline().split(" ").map(function (x) { return parseInt(x) });
+        var sum = b[b.length - 1];
+        b.pop()
+        var c = a.concat(b);
+        c = c.sort(function (x, y) { return y - x });
+        for (var i = 0; i < n - 1; i++) {
+            sum += c[i];
 
-        input = readline();
-        var n = parseInt(input);
-        var sum = ((((n * (n + 1)) % 1000000007) * (4 * n - 1)) % 1000000007 * 337) % 1000000007;
+        }
         print(sum);
     }
+
 }
