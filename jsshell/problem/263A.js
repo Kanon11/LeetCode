@@ -4,7 +4,7 @@ while (1) {
         var input = readline().split(" ").map(function (x) { return parseInt(x) });
         matrix.push(input);
     }
-    print(matrix);
+    // print(matrix);
     var stop = false;
     for (var i = 0; i < matrix.length; i++) {
         for (var j = 0; j < matrix[i].length; j++) {
