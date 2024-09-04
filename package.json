@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+"type": "module",
   "scripts": {
     "start": "nodemon index.js",
     "dev": "nodemon longest-consecutive-sequence.js"
@@ -15,6 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.22"
   }
 }
